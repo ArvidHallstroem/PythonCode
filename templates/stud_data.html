@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Data collection page</title>
+        <!-- CSS Sheet goes here (used it as the assignment 2 asked) -->
+        <link rel="stylesheet" type="text/css" href="static\style.css">
+    </head>
+    <!-- Design justification: i used the same structure of header, main area of content and footer because it eased my work 
+        (did not have to design every page individually and the page had clear structure)--> 
+    <body>
+        <!-- Navigation field goes here -->
+        <!-- I used it to separate top from bottom and to create a space where i can input more stuff in future assignment -->
+        <header>
+            <nav>
+                <a href="information.html">About data collection</a>
+                <a href="stud_data.html">Student data collection</a>
+                <a href="welcome.html">Main page</a>
+            </nav>
+        </header>
+
+        <!-- Data form fields go here -->
+        <!-- I used sections to stylise every main area content part -->
+        <section>
+            <h2>Student Progress Data Collection Form</h2>
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <div  class="form-group">
+                    {{ form.full_name.label }}
+                    {{ form.full_name() }}
+                </div>
+                <br>
+                <div  class="form-group">
+                    {{ form.email.label }}
+                    {{ form.email() }}
+                </div>
+                <br>
+                <div  class="form-group">
+                    {{ form.student_number.label }}
+                    {{ form.student_number() }}
+                </div>
+                <br>
+                <div  class="form-group">
+                    {{ form.grades.label }}
+                    {{ form.grades() }}
+                </div>
+                <br>
+                <div  class="form-group">
+                    {{ form.satisfaction.label }}
+                    {{ form.satisfaction() }}
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>{{ form.improvements.label }}</label>
+                    {{ form.improvements(class="form-control") }}
+                </div>
+                <br>
+                <div>
+                    {{ form.submit(class="btn") }}
+                </div>
+            </form>
+        </section>
+
+        <!-- Footer goes here -->
+        <!-- I used footer to make website feel less empty and to separate top and bottom parts of site-->
+        <footer>
+            <p>2024 GIC</p>
+        </footer>
+
+    </body>
+</html>
+
