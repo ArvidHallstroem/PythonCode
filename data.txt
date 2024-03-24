@@ -1,6 +1,0 @@
-Student's Full Name: It
-Student's Email Address: Works
-Student Number: 100
-Grades Obtained in Course: percent of the times
-Overall Satisfaction with Academic Experience: very_satisfied
-Suggestions for Improvement: Just check it
